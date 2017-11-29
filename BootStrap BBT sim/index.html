@@ -46,17 +46,18 @@
               <li class="active"><a href="#">My Cases</a></li>
               <li><a href="#">Upsell</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">New Resource Allocation Form</a></li>
+                  <li><a href="#">Pending Allocations By Streams</a></li>
+                  <li><a href="#">Pending Allocations By Pool</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">Resource Allocation Status</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
               </li>
+              <li><a href="#">Next>> ...</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
@@ -69,12 +70,80 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Resorce Allocation Form</h1>
-        <p>This example is a quick simulation to illustrate how BM could request resorces via Allocation Form.</p>
+        <h1>Resorce Allocation Process</h1>
+        <p>This example is a quick simulation to illustrate how BM could request resources via Allocation Form.</p>
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
       </div>
+
+      <section id="New Resource Allocation Form">
+        <h2><a href="RAF">Resource Allocation Form</a></h2>
+          <h4>
+            <div class="form-input">
+            <label for="name">Business Line</label>
+            <br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   minlength="3"
+                   maxlength="10"
+                   required>
+            </div>
+            <div class="form-input">
+            <label for="name">CRM OM ID</label>
+            <br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   minlength="3"
+                   maxlength="10"
+                   required>
+            </div>
+            <label for="name">GSS Ticket No.</label>
+            <br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   minlength="3"
+                   maxlength="10"
+                   required>
+            </div>
+            <label for="name">Region/SubRegion</label>
+            <br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   minlength="3"
+                   maxlength="10"
+                   required>
+            </div>
+            <label for="name">Case Manager/Bid Manager</label>
+            <br>
+            <input type="text"
+                   id="name"
+                   name="name"
+                   minlength="3"
+                   maxlength="10"
+                   required>
+            </div>
+            <div class="form-input">
+            <label for="intdate">Internal Date</label>
+            <br>
+            <input type="date"
+                    name="date"
+                    id="date">
+            </div>
+            <div class="form-input">
+            <label for="custsub">Customer Submission</label>
+            <br>
+            <input type="date"
+                    name="date"
+                    id="date">
+            </div>
+
+          </h4>
+      </section>
 
     </div> <!-- /container -->
 
