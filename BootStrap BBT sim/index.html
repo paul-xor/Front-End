@@ -47,7 +47,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Project name</a>
+            <a class="navbar-brand" href="#">BidBox@Tracker</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -56,9 +56,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">New Resource Allocation Form</a></li>
-                  <li><a href="#">Pending Allocations By Streams</a></li>
-                  <li><a href="#">Pending Allocations By Pool</a></li>
+                  <li><a href="#raf">New Resource Allocation Form</a></li>
+                  <li><a href="#pas">Pending Allocations By Streams</a></li>
+                  <li><a href="#pap">Pending Allocations By Pool</a></li>
                   <li role="separator" class="divider"></li>
                   <li class="dropdown-header">Process STATUS</li>
                   <li><a href="#">Resource Allocation Status</a></li>
@@ -92,7 +92,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Resource</strong> Allocation Form</h1>
+                            <h1 id="raf"><strong>Resource</strong> Allocation Form</h1>
                             <div class="description">
                               <p>
                                 This is an <strong>Allocation Form</strong></a>, could be customized with additional/valuable information!
@@ -100,6 +100,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 form-box">
                           <div class="form-top">
@@ -113,10 +114,35 @@
                             </div>
                             <div class="form-bottom">
                           <form role="form" action="" method="post" class="login-form">
+                              
                               <div class="form-group">
                               <label class="sr-only" for="form-bl">Business Line</label>
                                 <input type="text" name="form-bl" placeholder="Dropdown Business Line..." class="form-bl form-control" id="form-bl">
                               </div>
+
+                              <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
+                                <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li class="dropdown-header">Mobile Network (MN)</li>
+                                  <li><a href="#">Radio Access Networks (RAN)</a></li>
+                                  <li><a href="#">Subscriber Data Managment (SDM)</a></li>
+                                  <li><a href="#">Circuit Switch CORE (CS)</a></li>
+                                  <li><a href="#">IP Multimedia Subsystem (IMS)</a></li>
+                                  <li class="divider"></li>
+                                  <li class="dropdown-header">IP Optical Networks(ION)</li>
+                                  <li><a href="#">IP Routing</a></li>
+                                  <li><a href="#">Optical Transport</a></li>
+                                  <li class="dropdown-header">Application & Analytics (A&A)</li>
+                                  <li><a href="#">Operation Support Systems (OSS)</a></li>
+                                  <li><a href="#"></a></li>
+                                  <li class="dropdown-header">Fixed Networks (FN)</li>
+                                  <li><a href="#"></a>BroadBand Access (BBA)</li>
+                                  <li><a href="#"></a>Digital Home</li>
+                                  <li><a href="#"></a>Managment Solution</li>
+                                </ul>
+                              </div>
+                              <br>
                               <div class="form-group">
                                  <label class="sr-only" for="form-crmid">CRM ID</label>
                                  <input type="text" name="form-crmid" placeholder="CRM ID..." class="form-crmid form-control" id="form-crmid">
@@ -153,12 +179,27 @@
                                 <label class="sr-only" for="form-scde">Scope and Deliverables</label>
                                 <textarea type="text" name="form-scde" placeholder="Scope and Deliverables" class="form-scde form-control" id="form-scde"></textarea>
                               </div>
-
+                              <div class="form-group">
+                                
+                              </div>
                               <button type="submit" class="btn">Submit!</button>
                           </form>
                         </div>
                         </div>
                     </div>
+
+                    <br><br><br><br><br><br>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 id="pas"><strong>Pending</strong> Allocation By Stream Table</h1>
+                            <div class="description">
+                              <p>
+                                This is an <strong>Pending Allocation By Stream Tab</strong></a>, could be customized with additional/valuable information!
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 social-login">
                           <h3>...or login with:</h3>
