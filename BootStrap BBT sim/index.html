@@ -10,19 +10,27 @@
     <link rel="icon" href="../../favicon.ico">
 
     <title>Resource Allocation Form</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-    <!-- Custom styles for this template -->
-    <link href="css/navbar.css" rel="stylesheet">
-
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    
   </head>
 
   <body>
@@ -52,7 +60,7 @@
                   <li><a href="#">Pending Allocations By Streams</a></li>
                   <li><a href="#">Pending Allocations By Pool</a></li>
                   <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
+                  <li class="dropdown-header">Process STATUS</li>
                   <li><a href="#">Resource Allocation Status</a></li>
                   <li><a href="#">One more separated link</a></li>
                 </ul>
@@ -77,84 +85,112 @@
         </p>
       </div>
 
-      <section id="New Resource Allocation Form">
-        <h2><a href="RAF">Resource Allocation Form</a></h2>
-          <h4>
-            <div class="form-input">
-            <label for="name">Business Line</label>
-            <br>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   minlength="3"
-                   maxlength="10"
-                   required>
-            </div>
-            <div class="form-input">
-            <label for="name">CRM OM ID</label>
-            <br>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   minlength="3"
-                   maxlength="10"
-                   required>
-            </div>
-            <label for="name">GSS Ticket No.</label>
-            <br>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   minlength="3"
-                   maxlength="10"
-                   required>
-            </div>
-            <label for="name">Region/SubRegion</label>
-            <br>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   minlength="3"
-                   maxlength="10"
-                   required>
-            </div>
-            <label for="name">Case Manager/Bid Manager</label>
-            <br>
-            <input type="text"
-                   id="name"
-                   name="name"
-                   minlength="3"
-                   maxlength="10"
-                   required>
-            </div>
-            <div class="form-input">
-            <label for="intdate">Internal Date</label>
-            <br>
-            <input type="date"
-                    name="date"
-                    id="date">
-            </div>
-            <div class="form-input">
-            <label for="custsub">Customer Submission</label>
-            <br>
-            <input type="date"
-                    name="date"
-                    id="date">
-            </div>
 
-          </h4>
-      </section>
+    <div class="top-content">
+          
+            <div class="inner-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1><strong>Resource</strong> Allocation Form</h1>
+                            <div class="description">
+                              <p>
+                                This is an <strong>Allocation Form</strong></a>, could be customized with additional/valuable information!
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 form-box">
+                          <div class="form-top">
+                            <div class="form-top-left">
+                              <h3>New Allocation Request</h3>
+                                <p>Please enter required information carefully</p>
+                            </div>
+                            <div class="form-top-right">
+                              <i class="fa fa-key"></i>
+                            </div>
+                            </div>
+                            <div class="form-bottom">
+                          <form role="form" action="" method="post" class="login-form">
+                              <div class="form-group">
+                              <label class="sr-only" for="form-bl">Business Line</label>
+                                <input type="text" name="form-bl" placeholder="Dropdown Business Line..." class="form-bl form-control" id="form-bl">
+                              </div>
+                              <div class="form-group">
+                                 <label class="sr-only" for="form-crmid">CRM ID</label>
+                                 <input type="text" name="form-crmid" placeholder="CRM ID..." class="form-crmid form-control" id="form-crmid">
+                              </div>
+                              <div class="form-group">
+                                 <label class="sr-only" for="form-tid">Ticket ID</label>
+                                 <input type="text" name="form-tid" placeholder="Ticket ID..." class="form-tid form-control" id="form-tid">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-reg">Region/Subregion</label>
+                                <input type="text" name="form-reg" placeholder="Region/Subregion" class="form-reg form-control" id="form-reg">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-bm">Case/Bid Manager</label>
+                                <input type="text" name="form-bm" placeholder="Case/Bid Manager" class="form-bm form-control" id="form-bm">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-bdate">Bid Date</label>
+                                <input type="date" name="form-bdate" placeholder="Please enter internal bid date here" class="form-bdate form-control" id="form-bdate">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-subdate">Submission</label>
+                                <input type="date" name="form-subdate" placeholder="Please enter submission date here" class="form-control form-subdate " id="form-subdate">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-linkrfq">Link to RFQ</label>
+                                <input type="text" name="form-linkrfq" placeholder="Please provide link to SharePoint with RFQ" class="form-linkrfq form-control" id="form-linkrfq">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-techpro">Technology & Products</label>
+                                <input type="text" name="form-techpro" placeholder="Technology & products to be covered" class="form-techpro form-control" id="form-techpro">
+                              </div>
+                              <div class="form-group">
+                                <label class="sr-only" for="form-scde">Scope and Deliverables</label>
+                                <textarea type="text" name="form-scde" placeholder="Scope and Deliverables" class="form-scde form-control" id="form-scde"></textarea>
+                              </div>
+
+                              <button type="submit" class="btn">Submit!</button>
+                          </form>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 social-login">
+                          <h3>...or login with:</h3>
+                          <div class="social-login-buttons">
+                            <a class="btn btn-link-1 btn-link-1-facebook" href="#">
+                              <i class="fa fa-facebook"></i> Facebook
+                            </a>
+                            <a class="btn btn-link-1 btn-link-1-twitter" href="#">
+                              <i class="fa fa-twitter"></i> Twitter
+                            </a>
+                            <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+                              <i class="fa fa-google-plus"></i> Google Plus
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
 
     </div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
   </body>
 </html>
