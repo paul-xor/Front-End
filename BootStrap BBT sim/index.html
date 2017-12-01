@@ -115,11 +115,7 @@
                             <div class="form-bottom">
                           <form role="form" action="" method="post" class="login-form">
                               
-                              <div class="form-group">
-                              <label class="sr-only" for="form-bl">Business Line</label>
-                                <input type="text" name="form-bl" placeholder="Dropdown Business Line..." class="form-bl form-control" id="form-bl">
-                              </div>
-
+                            <div class="form-group">
                               <div class="dropdown">
                                 <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
                                 <span class="caret"></span></button>
@@ -135,14 +131,16 @@
                                   <li><a href="#">Optical Transport</a></li>
                                   <li class="dropdown-header">Application & Analytics (A&A)</li>
                                   <li><a href="#">Operation Support Systems (OSS)</a></li>
+                                  <li><a href="#">Business Support Systems (BSS)</a></li>
                                   <li><a href="#"></a></li>
                                   <li class="dropdown-header">Fixed Networks (FN)</li>
-                                  <li><a href="#"></a>BroadBand Access (BBA)</li>
-                                  <li><a href="#"></a>Digital Home</li>
-                                  <li><a href="#"></a>Managment Solution</li>
+                                  <li><a href="#">BroadBand Access (BBA)</a></li>
+                                  <li><a href="#">Digital Home</a></li>
+                                  <li><a href="#">Managment Solution</a></li>
                                 </ul>
                               </div>
-                              <br>
+                            </div>
+                              
                               <div class="form-group">
                                  <label class="sr-only" for="form-crmid">CRM ID</label>
                                  <input type="text" name="form-crmid" placeholder="CRM ID..." class="form-crmid form-control" id="form-crmid">
@@ -197,8 +195,311 @@
                                 This is an <strong>Pending Allocation By Stream Tab</strong></a>, could be customized with additional/valuable information!
                               </p>
                             </div>
+                                <h3> <strong>MN streams</strong></h3> 
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>FLAG</th>
+                                      <th>PRIORITY</th>
+                                      <th>Case</th>
+                                      <th>OM ID</th>
+                                      <th>Information</th>
+                                      <th>Deadline</th>
+                                      <th>DATE</th>
+                                      <th>ACTION</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>1</td>
+                                      <td>12345GSS6789</td>
+                                      <td>SF 17.345679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>10.11.2017</td>
+                                      <td>1.11.2017</td>
+                                      <td>
+                                        <div class="btn-group-xs">
+                                          <button type="button" class="btn btn-primary">Assign</button>
+                                          <button type="button" class="btn btn-primary">Move</button>
+                                          <button type="button" class="btn btn-default">Reject</button>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>2</td>
+                                      <td>15345GSS6780</td>
+                                      <td>SF 17.442679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>12.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BLUE</td>
+                                      <td>3</td>
+                                      <td>18345GSS6489</td>
+                                      <td>SF 16.325679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>23.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>none</td>
+                                      <td>4</td>
+                                      <td>22345GSS6489</td>
+                                      <td>SF 16.175628</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>20.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                                <h3> <strong>A&A streams</strong></h3> 
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>FLAG</th>
+                                      <th>PRIORITY</th>
+                                      <th>Case</th>
+                                      <th>OM ID</th>
+                                      <th>Information</th>
+                                      <th>Deadline</th>
+                                      <th>DATE</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>1</td>
+                                      <td>12345GSS6789</td>
+                                      <td>SF 17.345679</td>
+                                      <td>Delivserables ... Scope ... SharePoint ...</td>
+                                      <td>10.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>2</td>
+                                      <td>15345GSS6780</td>
+                                      <td>SF 17.442679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>12.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BLUE</td>
+                                      <td>2</td>
+                                      <td>18345GSS6489</td>
+                                      <td>SF 16.325679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>23.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <h3> <strong>ION streams</strong></h3> 
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>FLAG</th>
+                                      <th>PRIORITY</th>
+                                      <th>Case</th>
+                                      <th>OM ID</th>
+                                      <th>Information</th>
+                                      <th>Deadline</th>
+                                      <th>DATE</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>1</td>
+                                      <td>12345GSS6789</td>
+                                      <td>SF 17.345679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>10.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BLUE</td>
+                                      <td>2</td>
+                                      <td>15345GSS6780</td>
+                                      <td>SF 17.442679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>12.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>none</td>
+                                      <td>2</td>
+                                      <td>18345GSS6489</td>
+                                      <td>SF 16.325679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>23.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
                         </div>
                     </div>
+
+                    <br><br><br><br><br><br>
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 id="pas"><strong>Pending</strong> Allocation By Pool Table</h1>
+                            <div class="description">
+                              <p>
+                                This is an <strong>Pending Allocation By Pool Tab</strong></a>, could be customized with additional/valuable information!
+                              </p>
+                            </div>
+                                <h3> <strong>IN pool</strong></h3> 
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>FLAG</th>
+                                      <th>PRIORITY</th>
+                                      <th>Case</th>
+                                      <th>OM ID</th>
+                                      <th>Information</th>
+                                      <th>Deadline</th>
+                                      <th>DATE</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>1</td>
+                                      <td>12345GSS6789</td>
+                                      <td>SF 17.345679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>10.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>2</td>
+                                      <td>15345GSS6780</td>
+                                      <td>SF 17.442679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>12.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BLUE</td>
+                                      <td>3</td>
+                                      <td>18345GSS6489</td>
+                                      <td>SF 16.325679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>23.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>none</td>
+                                      <td>4</td>
+                                      <td>22345GSS6489</td>
+                                      <td>SF 16.175628</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>20.11.2017</td>
+                                      <td>1.11.2017</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <h3> <strong>MX pool</strong></h3> 
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>FLAG</th>
+                                      <th>PRIORITY</th>
+                                      <th>Case</th>
+                                      <th>OM ID</th>
+                                      <th>Information</th>
+                                      <th>Deadline</th>
+                                      <th>DATE</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>1</td>
+                                      <td>12345GSS6789</td>
+                                      <td>SF 17.345679</td>
+                                      <td>Delivserables ... Scope ... SharePoint ...</td>
+                                      <td>10.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>2</td>
+                                      <td>15345GSS6780</td>
+                                      <td>SF 17.442679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>12.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BLUE</td>
+                                      <td>2</td>
+                                      <td>18345GSS6489</td>
+                                      <td>SF 16.325679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>23.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <h3> <strong>UA pool</strong></h3> 
+                                <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>FLAG</th>
+                                      <th>PRIORITY</th>
+                                      <th>Case</th>
+                                      <th>OM ID</th>
+                                      <th>Information</th>
+                                      <th>Deadline</th>
+                                      <th>DATE</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>RED</td>
+                                      <td>1</td>
+                                      <td>12345GSS6789</td>
+                                      <td>SF 17.345679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>10.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>BLUE</td>
+                                      <td>2</td>
+                                      <td>15345GSS6780</td>
+                                      <td>SF 17.442679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>12.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                    <tr>
+                                      <td>none</td>
+                                      <td>2</td>
+                                      <td>18345GSS6489</td>
+                                      <td>SF 16.325679</td>
+                                      <td>Deliverables ... Scope ... SharePoint ...</td>
+                                      <td>23.12.2017</td>
+                                      <td>1.12.2017</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                        </div>
+                    </div>
+
 
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 social-login">
